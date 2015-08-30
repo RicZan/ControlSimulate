@@ -1,0 +1,26 @@
+#!/usr/bin/env python
+import rospy
+from std_msgs.msg import Float32
+
+u = 0
+K = -2
+
+def updateu(msg)
+    pubu = rospy.Publisher('u', Float32)
+    rate = rospy.Rate(100) # f=100Hz -> T=10ms 
+    while not rospy.is_shutdown():
+        u = K*msg.x
+        rospy.loginfo(u)
+        pubu.publish(u)
+        rate.sleep()    
+
+def proc():
+    rospy.init_node('control')
+    rospy.Subscriber("x", Float32, updateu)
+    rospy.spin()
+
+if __name__ == '__main__':
+    try:
+        proc()
+    except rospy.ROSInterruptException:
+        pass

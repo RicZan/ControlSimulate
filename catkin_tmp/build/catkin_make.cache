@@ -1,0 +1,2 @@
+sys_diffeq
+-DCATKIN_DEVEL_PREFIX=/home/smladmin/catkin_tmp/devel -DCMAKE_INSTALL_PREFIX=/home/smladmin/catkin_tmp/install -G Unix Makefiles

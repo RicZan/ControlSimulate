@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "sys_diffeq")
+set(sys_diffeq_MAINTAINER "smladmin <smladmin@todo.todo>")
+set(sys_diffeq_DEPRECATED "")
+set(sys_diffeq_VERSION "0.0.0")
+set(sys_diffeq_BUILD_DEPENDS "message_generation" "rospy" "std_msgs")
+set(sys_diffeq_RUN_DEPENDS "message_runtime" "rospy" "std_msgs")
+set(sys_diffeq_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,6 @@
+<launch>
+
+	<node pkg="sys_diffeq" name="simulator" type="Simulator.py"  output="screen" launch-prefix="xterm -e"/>
+    	<node pkg="sys_diffeq" name="controller" type="Controller.py" output="screen" launch-prefix="xterm -e"/>
+
+</launch>

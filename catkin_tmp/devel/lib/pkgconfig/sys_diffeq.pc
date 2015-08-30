@@ -1,0 +1,8 @@
+prefix=/home/smladmin/catkin_tmp/devel
+
+Name: sys_diffeq
+Description: Description of sys_diffeq
+Version: 0.0.0
+Cflags: -I/home/smladmin/catkin_tmp/devel/include
+Libs: -L/home/smladmin/catkin_tmp/devel/lib 
+Requires: rospy std_msgs message_runtime

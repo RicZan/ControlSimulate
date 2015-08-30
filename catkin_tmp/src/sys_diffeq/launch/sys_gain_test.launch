@@ -1,0 +1,17 @@
+<launch>
+
+	<group ns="test_ctr1">
+		<node pkg="sys_diffeq" name="simulator" type="Simulator.py"  output="screen" launch-prefix="xterm -e"/>
+		<node pkg="sys_diffeq" name="controller" type="Controller.py" output="screen" launch-prefix="xterm -e">
+			<param name="gain" type="double" value="-1.2" />
+		</node>
+	</group>
+
+	<group ns="test_ctr2">
+		<node pkg="sys_diffeq" name="simulator" type="Simulator.py"  output="screen" launch-prefix="xterm -e"/>
+		<node pkg="sys_diffeq" name="controller" type="Controller.py" output="screen" launch-prefix="xterm -e">
+			<param name="gain" type="double" value="-1.2" />
+		</node>
+	</group>
+
+</launch>

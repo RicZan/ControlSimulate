@@ -1,0 +1,15 @@
+(cl:defpackage sys_diffeq-srv
+  (:use )
+  (:export
+   "ADDTWOINTS"
+   "<ADDTWOINTS-REQUEST>"
+   "ADDTWOINTS-REQUEST"
+   "<ADDTWOINTS-RESPONSE>"
+   "ADDTWOINTS-RESPONSE"
+   "SETSTATE"
+   "<SETSTATE-REQUEST>"
+   "SETSTATE-REQUEST"
+   "<SETSTATE-RESPONSE>"
+   "SETSTATE-RESPONSE"
+  ))
+
