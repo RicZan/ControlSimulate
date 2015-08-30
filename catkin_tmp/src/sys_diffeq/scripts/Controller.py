@@ -5,7 +5,7 @@ from std_msgs.msg import Float32
 
 u_0 = 0
 FREQ = 1
-K = -2# rospy.get_param("gain")#-2; # control gain (K<-1)
+K = -2 # control gain (K<-1)
 
 class Controller():
 
